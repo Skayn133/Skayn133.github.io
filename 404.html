@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>エラー発生。</title>
+  <title>ページが見つかりません</title>
   <style>
     @font-face {
-      font-family: 'JetBrains Mono';
-      src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+      font-family: 'Comic Sans MS';
+      src: local('Comic Sans MS'), url('/font/Comic Sans MS-Regular.woff2') format('woff2');
     }
 
     html,
@@ -22,7 +22,7 @@
       background-color: #141516;
       background-position: 50% 50%;
       background-repeat: no-repeat;
-      background-image: url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);
+      background-image: url(img/bg1.jpg);
     }
 
     main {
@@ -45,7 +45,7 @@
 
     #error a {
       color: #2BF;
-      padding: 3px 10px;
+      padding: 3px 5px;
       font-size: larger;
       text-decoration: none;
     }
@@ -56,13 +56,14 @@
     }
 
     h1 {
-      font-size: 60px;
-      color: #FE2;
+      font-size: 50px;
+      color: rgb(255, 0, 0);
     }
 
     h2 {
       font-size: 32px;
-      font-family: "JetBrains Mono";
+      font-family: "Comic Sans MS";
+      color: #ff0000;
     }
 
     @media (max-width: 768px) {
@@ -82,13 +83,13 @@
 <body>
   <main>
     <a id="logo" href="/">
-      <img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="to home" />
+      <img src="img/faction/123.png" alt="to home" />
     </a>
     <div id="error">
-      <h1>エラー発生。</h1>
+      <h1>ページが見つかりません</h1>
       <h2 style="text-align: left;">404 NOT FOUND</h2>
       <p style="text-align: left;">
-        <a href="/">首页</a>
+        <a href="/">主页</a>
         <a onClick="history.back();">上一页</a>
       </p>
     </div>
